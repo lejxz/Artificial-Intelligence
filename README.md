@@ -97,7 +97,7 @@ Tier 1 topics align directly with the **Perceptual AR** direction — object ide
 - .gitignore and managing binary files
 - Commit discipline — meaningful messages and atomic commits
 
-> **Mini Project 6:** Publish all Year 1 projects to a structured GitHub repository with individual READMEs, setup instructions, and a top-level portfolio README.
+> **Mini Project 6:** Publish all Year 1 projects to a structured GitHub repository with individual READMEs, setup instructions, and a top-level portfolio README. 
 
 ---
 
