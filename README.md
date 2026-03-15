@@ -4,9 +4,22 @@
 
 ---
 
+## How to Use This Roadmap
+
+Each topic is marked with one of two tiers:
+
+| Label | Meaning |
+|---|---|
+| 🟢 Tier 1 — Go Deep | Build real proficiency. Do the mini project. Study until you can explain and implement it without reference. |
+| 🟡 Tier 2 — Awareness | Understand what it is, why it exists, and when it is used. Read about it, run existing code, but do not build from scratch. |
+
+Tier 1 topics align directly with the **Perceptual AR** direction — object identification, generative AI integration, vision-language understanding, gesture, features and object recognition, and on-device deployment. Tier 2 topics provide useful context and keep your options open without demanding deep investment.
+
+---
+
 ## Year 1 — Foundations
 
-### * Mathematics for AI and Graphics
+### 🟢 * Mathematics for AI and Graphics
 - Linear algebra — vectors, matrices, dot/cross products
 - Matrix transformations — rotation, translation, scaling
 - Homogeneous coordinates and projection matrices
@@ -22,7 +35,7 @@
 
 ---
 
-### * Python for Scientific Computing
+### 🟢 * Python for Scientific Computing
 - NumPy — arrays, broadcasting, linear algebra ops
 - pandas — data loading, cleaning, manipulation
 - matplotlib and seaborn — visualization and plotting
@@ -34,7 +47,7 @@
 
 ---
 
-### * C++ Basics for AR/CV Work
+### 🟡 * C++ Basics for AR/CV Work
 - Compilation model — headers, source files, linking
 - Pointers and memory management
 - Classes and objects — constructors, destructors
@@ -42,11 +55,11 @@
 - References and const correctness
 - Basic CMake project setup
 
-> **Mini Project 3:** Implement a simple image struct in C++ that stores pixel data in a 2D array and supports basic operations — invert, crop, and threshold — compiled with CMake.
+> **Mini Project 3 (optional):** Implement a simple image struct in C++ that stores pixel data in a 2D array and supports basic operations — invert, crop, and threshold — compiled with CMake.
 
 ---
 
-### * Machine Learning Fundamentals
+### 🟢 * Machine Learning Fundamentals
 - Supervised vs unsupervised vs reinforcement learning
 - Linear regression and logistic regression from scratch
 - Decision trees and random forests
@@ -62,7 +75,7 @@
 
 ---
 
-### * Computer Vision Introduction
+### 🟢 * Computer Vision Introduction
 - How digital images work — pixels, channels, color spaces (RGB, HSV, grayscale)
 - Image read, write, and display with OpenCV
 - Geometric transformations — resize, rotate, flip, warp
@@ -77,7 +90,7 @@
 
 ---
 
-### * Version Control and Development Workflow
+### 🟢 * Version Control and Development Workflow
 - Git fundamentals — init, add, commit, push, pull
 - Branching and merging
 - GitHub — repository management, README writing
@@ -88,7 +101,7 @@
 
 ---
 
-### * AR Exploration — Getting Started
+### 🟢 * AR Exploration — Getting Started
 - What is AR — marker-based, markerless, projection-based
 - Overview of AR hardware — HoloLens 2, Meta Quest, ARCore phones
 - Install Unity and set up an AR Foundation project
@@ -102,7 +115,7 @@
 
 ## Year 2 — Intermediate AI and Vision
 
-### * Neural Networks from the Ground Up
+### 🟢 * Neural Networks from the Ground Up
 - Perceptron and multilayer perceptron (MLP)
 - Activation functions — ReLU, sigmoid, tanh, GELU
 - Forward pass and loss computation
@@ -118,7 +131,7 @@
 
 ---
 
-### * PyTorch Core
+### 🟢 * PyTorch Core
 - Tensors — creation, indexing, operations, GPU transfer
 - Autograd — computational graph and gradient computation
 - nn.Module — defining custom layers and models
@@ -132,7 +145,7 @@
 
 ---
 
-### * Convolutional Neural Networks (CNNs)
+### 🟢 * Convolutional Neural Networks (CNNs)
 - Convolution operation — kernel, stride, padding, dilation
 - Pooling — max pooling, average pooling, global average pooling
 - Classic architectures — LeNet, AlexNet, VGG, ResNet, EfficientNet
@@ -146,18 +159,18 @@
 
 ---
 
-### * Feature Detection and Matching
+### 🟡 * Feature Detection and Matching
 - Keypoint detectors — SIFT, ORB, FAST, AKAZE
 - Descriptors and descriptor matching — brute-force, FLANN
 - Homography estimation — RANSAC
 - Image stitching and panorama construction
 - Template matching
 
-> **Mini Project 11:** Build an image stitching pipeline using OpenCV that takes two overlapping photos and produces a single panorama using ORB keypoints, descriptor matching, and homography estimation.
+> *(Awareness only — read and run existing examples. Skip the mini project unless time allows.)*
 
 ---
 
-### * Camera Models and Calibration
+### 🟡 * Camera Models and Calibration
 - Pinhole camera model — intrinsic matrix, focal length, principal point
 - Lens distortion — radial and tangential
 - Camera calibration using a checkerboard
@@ -165,22 +178,22 @@
 - Stereo camera geometry — baseline, disparity, depth
 - Epipolar geometry — epipoles, epipolar lines, essential and fundamental matrix
 
-> **Mini Project 12:** Calibrate a webcam using OpenCV and a printed checkerboard. Compute the intrinsic matrix and distortion coefficients. Undistort a video stream in real time and visualize the correction.
+> *(Awareness only — understand the concepts. Run the OpenCV calibration demo once to see it in practice.)*
 
 ---
 
-### * Introduction to 3D Vision
+### 🟡 * Introduction to 3D Vision
 - Depth from stereo — disparity maps and depth maps
 - Monocular depth estimation — learned methods overview
 - Point clouds — representation and visualization with Open3D
 - 3D transformations — rigid body motions, SO(3), SE(3)
 - Coordinate frame changes — sensor to world transforms
 
-> **Mini Project 13:** Generate a depth map from a stereo image pair using OpenCV's StereoSGBM. Convert the disparity map to a 3D point cloud and visualize it interactively with Open3D.
+> *(Awareness only — understand depth maps and point clouds conceptually. You will encounter them in SLAM and reconstruction contexts.)*
 
 ---
 
-### * Intermediate AR Development
+### 🟢 * Intermediate AR Development
 - Plane detection and spatial anchors in AR Foundation
 - Marker-based AR — image targets with Vuforia or AR Foundation
 - Raycasting in AR — placing objects at hit points
@@ -188,13 +201,13 @@
 - Occlusion handling basics
 - AR session lifecycle management
 
-> **Mini Project 14:** Build a marker-based AR app that detects a printed image target and overlays an animated 3D model on top of it. Add basic lighting estimation so the model reacts to real-world illumination.
+> **Mini Project 11:** Build a marker-based AR app that detects a printed image target and overlays an animated 3D model on top of it. Add basic lighting estimation so the model reacts to real-world illumination.
 
 ---
 
 ## Year 3 — Applied Computer Vision for AR
 
-### * Object Detection
+### 🟢 * Object Detection
 - Detection paradigms — one-stage vs two-stage
 - Anchor boxes, IoU, non-maximum suppression (NMS)
 - Faster R-CNN — region proposal network, ROI pooling
@@ -204,11 +217,11 @@
 - Dataset labeling — LabelImg or Roboflow
 - Data augmentation for detection — mosaic, flips, scaling
 
-> **Mini Project 15:** Train YOLOv8 on a custom-labeled dataset of 5–10 object classes. Deploy it with OpenCV for real-time inference on a webcam feed. Display class labels, confidence scores, and bounding boxes.
+> **Mini Project 12:** Train YOLOv8 on a custom-labeled dataset of 5–10 object classes. Deploy it with OpenCV for real-time inference on a webcam feed. Display class labels, confidence scores, and bounding boxes.
 
 ---
 
-### * Image Segmentation
+### 🟢 * Image Segmentation
 - Semantic segmentation — pixel-wise class labels
 - Instance segmentation — per-object masks
 - U-Net — encoder-decoder architecture with skip connections
@@ -217,11 +230,11 @@
 - DeepLabV3+ — atrous convolution and ASPP
 - Evaluation — mIoU, Dice coefficient
 
-> **Mini Project 16:** Use SAM to segment objects in a live camera feed interactively. Allow the user to click on an object to generate its mask. Overlay a colored mask on the original frame in real time.
+> **Mini Project 13:** Use SAM to segment objects in a live camera feed interactively. Allow the user to click on an object to generate its mask. Overlay a colored mask on the original frame in real time.
 
 ---
 
-### * SLAM — Simultaneous Localization and Mapping
+### 🟡 * SLAM — Simultaneous Localization and Mapping
 - SLAM problem definition — pose estimation and map building
 - Visual odometry — estimating camera motion from image sequences
 - Feature-based SLAM — ORB-SLAM3 overview and setup
@@ -230,11 +243,11 @@
 - Pose graphs and graph optimization
 - Introduction to LiDAR SLAM concepts
 
-> **Mini Project 17:** Set up ORB-SLAM3 on a recorded monocular video. Run it and visualize the reconstructed sparse map and camera trajectory. Analyze where tracking fails and document the causes.
+> *(Awareness only — understand what SLAM solves and why AR devices use it. Run ORB-SLAM3 on a sample video once to observe the output. Do not build from scratch.)*
 
 ---
 
-### * Pose Estimation
+### 🟢 * Pose Estimation
 - 2D pose estimation — heatmap-based keypoint detection
 - HRNet and OpenPose architectures
 - 3D pose estimation — lifting 2D keypoints to 3D
@@ -243,11 +256,24 @@
 - Head pose estimation — solving the PnP problem
 - Pose-driven AR interaction — mapping skeleton joints to virtual controls
 
-> **Mini Project 18:** Build a gesture-controlled AR interface using MediaPipe Hands. Define 3–5 hand gestures (e.g., pinch, open palm, point) and map each to an AR action such as scale, rotate, or place an object.
+> **Mini Project 14:** Build a gesture-controlled AR interface using MediaPipe Hands. Define 3–5 hand gestures (e.g., pinch, open palm, point) and map each to an AR action such as scale, rotate, or place an object.
 
 ---
 
-### * Optical Flow and Motion Tracking
+### 🟢 * Sign Language Recognition
+- Sign language datasets — ASL, FSL, and others
+- Hand landmark extraction using MediaPipe
+- Sequence modeling for dynamic signs — LSTM, GRU, Transformer
+- Static vs dynamic sign classification
+- Real-time inference pipeline — webcam to text output
+- Handling signer variation and lighting conditions
+- Evaluation — per-class accuracy, confusion matrix
+
+> **Mini Project 15:** Build a real-time sign language recognition system using MediaPipe Hands for landmark extraction and an LSTM for sequence classification. Display the recognized word or letter as text overlay on the camera feed.
+
+---
+
+### 🟡 * Optical Flow and Motion Tracking
 - Optical flow definition — apparent motion field
 - Lucas-Kanade sparse optical flow
 - Farneback dense optical flow
@@ -255,11 +281,11 @@
 - Multi-object tracking — DeepSORT, ByteTrack
 - Kalman filter for trajectory smoothing
 
-> **Mini Project 19:** Implement a multi-object tracker using YOLOv8 for detection and ByteTrack for tracking. Display persistent object IDs and draw motion trails for each tracked object on a video file.
+> *(Awareness only — understand optical flow and how trackers like DeepSORT work. You will use ByteTrack as a library in later projects without needing to implement it.)*
 
 ---
 
-### * 3D Reconstruction
+### 🟡 * 3D Reconstruction
 - Structure from Motion (SfM) pipeline — feature match, pose estimation, triangulation
 - Multi-view stereo (MVS)
 - Neural Radiance Fields (NeRF) — concept, volume rendering, training
@@ -267,11 +293,11 @@
 - COLMAP for photogrammetry
 - Mesh processing with Open3D — smoothing, simplification, export
 
-> **Mini Project 20:** Capture 20–30 photos of an object from multiple angles. Run COLMAP to reconstruct a sparse and dense 3D model. Visualize the point cloud and export a mesh for use in Unity.
+> *(Awareness only — understand NeRF and Gaussian Splatting conceptually. Run a pre-trained demo to observe the output. Relevant if you later move toward neural rendering, but not a priority for the assistant track.)*
 
 ---
 
-### * AR with AI Integration — Year 3 Milestone App
+### 🟢 * AR with AI Integration — Year 3 Milestone App
 - Integrating a PyTorch model into Unity via Barracuda or a REST API
 - Real-time inference pipeline — capture, preprocess, infer, overlay
 - Latency profiling and optimization
@@ -284,19 +310,7 @@
 
 ## Year 4 — Specialization and Capstone
 
-### * Advanced Detection and Tracking
-- Real-time multi-object tracking at scale
-- Re-identification (ReID) — tracking across camera cuts
-- 3D object detection — PointPillars, BEV detection methods
-- Panoptic segmentation — combining semantic and instance outputs
-- Open-vocabulary detection — OWL-ViT, Grounding DINO
-- Sparse convolutions for 3D data — spconv
-
-> **Mini Project 21:** Extend the multi-object tracker from Mini Project 19 to handle re-identification across two camera views. Assign consistent global IDs to the same person appearing in both feeds.
-
----
-
-### * Transformers in Computer Vision
+### 🟢 * Transformers in Computer Vision
 - Attention mechanism — scaled dot-product, multi-head attention
 - Vision Transformer (ViT) — patch embeddings, position encoding
 - Swin Transformer — hierarchical windowed attention
@@ -305,23 +319,36 @@
 - Grounded vision-language models — Grounding DINO, LLaVA
 - Applying vision-language models to AR scene description
 
-> **Mini Project 22:** Use CLIP to build an AR scene query system. The user speaks an object name, the system uses CLIP to locate the best-matching region in the live frame, and places an AR highlight overlay on it.
+> **Mini Project 16:** Use CLIP to build an AR scene query system. The user speaks an object name, the system uses CLIP to locate the best-matching region in the live frame, and places an AR highlight overlay on it.
 
 ---
 
-### * Neural Rendering and AR Visuals
-- NeRF in depth — volume rendering, positional encoding, training pipeline
-- Instant-NGP — fast hash-encoded NeRF training
-- 3D Gaussian Splatting — training pipeline and real-time viewer
-- Neural rendering for AR — inserting synthetic objects into real scenes
-- Relighting and material estimation
-- Diffusion models for AR asset and texture generation
+### 🟢 * Vision-Language Models and Generative AI Integration
+- Large vision-language models (VLMs) — GPT-4V, LLaVA, InstructBLIP
+- Prompt engineering for visual question answering
+- Retrieval-augmented generation (RAG) for knowledge grounding
+- Object identification with detail generation — name, description, usage
+- OCR integration — reading text from real-world surfaces
+- On-device vs API-based inference trade-offs
+- Chaining vision and language outputs into a coherent AR response
 
-> **Mini Project 23:** Train a Gaussian Splatting model on a self-captured object dataset. Render the object from novel viewpoints and composite it into a live AR camera feed at a fixed spatial anchor.
+> **Mini Project 17:** Build an AR object inspector. Point the camera at any object, the system detects it with YOLO, crops the region, sends it to a VLM API, and overlays a generated description panel in AR — name, what it is, and any relevant details.
 
 ---
 
-### * Lightweight Models and Edge Deployment
+### 🟡 * Advanced Detection and Tracking
+- Real-time multi-object tracking at scale
+- Re-identification (ReID) — tracking across camera cuts
+- 3D object detection — PointPillars, BEV detection methods
+- Panoptic segmentation — combining semantic and instance outputs
+- Open-vocabulary detection — OWL-ViT, Grounding DINO
+- Sparse convolutions for 3D data — spconv
+
+> *(Awareness only — understand open-vocabulary detection and panoptic segmentation. Use Grounding DINO as a library. Deep implementation of 3D detection is not a priority.)*
+
+---
+
+### 🟢 * Lightweight Models and Edge Deployment
 - Model compression — quantization (INT8, FP16), pruning, knowledge distillation
 - TensorFlow Lite — conversion, optimization, benchmarking
 - ONNX — model interchange format and ONNX Runtime
@@ -330,60 +357,65 @@
 - TinyML — inference on microcontrollers
 - Benchmarking — latency, throughput, memory footprint
 
-> **Mini Project 24:** Take a trained YOLOv8 model and convert it to TFLite with INT8 quantization. Deploy it on a mobile device. Benchmark FPS, latency, and accuracy degradation versus the full-precision model.
+> **Mini Project 18:** Take a trained YOLOv8 model and convert it to TFLite with INT8 quantization. Deploy it on a mobile device. Benchmark FPS, latency, and accuracy degradation versus the full-precision model.
 
 ---
 
-### * Generative Models for AR Content
-- GANs — generator, discriminator, training stability
-- Diffusion models — forward and reverse process, DDPM, DDIM
-- Stable Diffusion — architecture, ControlNet conditioning, LoRA fine-tuning
-- Text-to-3D — DreamFusion and Shap-E concepts
-- Using generated textures on 3D AR assets
+### 🟡 * Neural Rendering and AR Visuals
+- NeRF in depth — volume rendering, positional encoding, training pipeline
+- Instant-NGP — fast hash-encoded NeRF training
+- 3D Gaussian Splatting — training pipeline and real-time viewer
+- Neural rendering for AR — inserting synthetic objects into real scenes
+- Relighting and material estimation
+- Diffusion models for AR asset and texture generation
 
-> **Mini Project 25:** Fine-tune a ControlNet model to generate AR overlay graphics conditioned on edge maps from a live camera feed. Display the generated texture as a real-time AR visual filter.
+> *(Awareness only — understand the landscape. Run a Gaussian Splatting demo on your own data once. Relevant if you expand toward the rendering track later.)*
 
 ---
 
-### * Multi-Modal Learning
+### 🟢 * Multi-Modal Learning
 - Fusion strategies — early, late, and cross-attention fusion
 - Vision-language models — BLIP-2, InstructBLIP
-- Audio-visual learning — using sound to guide AR attention
+- Speech-to-text integration — Whisper for on-device voice input
+- Text-to-speech for AR voice output
 - Language-conditioned object detection and grounding
-- Embodied AI — vision and action in 3D environments
+- Chaining modalities — voice in, vision process, AR overlay out
 
-> **Mini Project 26:** Build a voice-activated AR labeling system. The user speaks an object name, the system runs Grounding DINO to locate it in the frame, and places a labeled AR anchor on the detected object.
+> **Mini Project 19:** Build a voice-activated AR labeling system. The user speaks an object name, the system runs Grounding DINO to locate it in the frame, and places a labeled AR anchor on the detected object. Add Whisper for on-device speech-to-text input.
 
 ---
 
-### * Capstone Project
+### 🟢 * Capstone Project
 
 Choose one and develop it to a production-ready, documented, and deployable state.
 
-#### Option A — AI-Powered AR Navigation Assistant
-- Real-time obstacle and object detection in the camera stream
-- Depth estimation for distance measurement to obstacles
-- Path planning with AR directional overlays
-- Voice command interface using a local speech-to-text model
-- Context-aware scene understanding (e.g., "door ahead on the left")
+#### Option A — Perceptual AR Assistant
+- Real-time object detection and identification using YOLO + VLM
+- Generative AI overlay — name, description, usage, and fun facts
+- Voice query interface using Whisper for speech-to-text
+- OCR for reading text on surfaces, signs, and labels
+- Sign language recognition module for accessibility
 
-#### Option B — AR Educational Platform with Intelligent Tutoring
-- Object recognition tied to subject-specific learning content
-- Gesture-based interaction for navigating 3D models
-- Adaptive difficulty using a reinforcement learning feedback loop
-- 3D visualization of abstract concepts — molecules, geometry, physics
+#### Option B — AR Sign Language Translator
+- Real-time hand landmark extraction with MediaPipe
+- Sequence classification for dynamic signs using a Transformer model
+- Live translation output overlaid as text in AR
+- Support for multiple sign vocabularies
+- Confidence display and fallback handling for ambiguous signs
 
-#### Option C — AR Accessibility Tool for the Visually Impaired
+#### Option C — AR Accessibility Assistant
 - Real-time object and text recognition (OCR) at high accuracy
 - Natural language scene description using a vision-language model
 - Spatial audio feedback — sound cues mapped to object positions
 - Hands-free gesture control for navigation and query
+- Voice output for identified objects and scene context
 
-#### Option D — Photorealistic AR Object Insertion
-- Gaussian Splatting for object capture and novel view synthesis
-- Real-time compositing of rendered objects into live AR scenes
-- Lighting and shadow estimation for physical plausibility
-- User interface for selecting and placing captured objects in AR
+#### Option D — AI-Powered AR Navigation Assistant
+- Real-time obstacle and object detection in the camera stream
+- Depth estimation for distance measurement to obstacles
+- Path planning with AR directional overlays
+- Voice command interface using Whisper
+- Context-aware scene understanding (e.g., "door ahead on the left")
 
 > **Deliverables (all options)**
 > - [ ] Working application deployable on a real device
@@ -396,23 +428,23 @@ Choose one and develop it to a production-ready, documented, and deployable stat
 
 ## Ongoing — Throughout All Years
 
-### * Git and Portfolio Hygiene
+### 🟢 * Git and Portfolio Hygiene
 - Maintain a clean GitHub profile with pinned repositories
 - Write READMEs with demo GIFs, setup instructions, and usage examples
 - Use semantic commit messages and branch-per-feature workflow
 - Tag releases for major project milestones
 
-### * Technical Writing
-- Document every mini project with a short write-up — problem, approach, and result
+### 🟢 * Technical Writing
+- Document every Tier 1 mini project with a short write-up — problem, approach, and result
 - Publish 2–3 technical blog posts per year on your work
 - Keep a personal learning journal tracking what you studied and what you built
 
-### * Open Source Contribution
+### 🟢 * Open Source Contribution
 - Year 2 — file issues or improve documentation on a CV or ML repository
 - Year 3 — submit a pull request with a bug fix or small feature
-- Year 4 — contribute meaningfully to an AR or 3D vision open-source project
+- Year 4 — contribute meaningfully to an AR, VLM, or sign language open-source project
 
-### * Personal Website
+### 🟢 * Personal Website
 - Year 1 — set up a portfolio site with a project list
 - Year 2 — add demo videos and project write-ups
 - Year 3 — add a blog section with technical articles
